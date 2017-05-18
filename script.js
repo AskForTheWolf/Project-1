@@ -9,9 +9,13 @@ $("#s1").click(function(event){
   event.preventDefault();
   var possibleAnswer = document.getElementsByName('q1');
   if ($('input[name=q1]:checked').val()== "Chile"){
-    alert("Correct");  
+    alert("Correct");
   }else alert("Incorrect")
 })
+//You may be able to write a "checkCorrect" kind of function
+//where you pass the input to the function and check if it's correct,
+//with the function containing a few IFs or case/switch
+//instead of having almost the same function 9 times.  Not exactly sure how but it's possible
 
 $("input[type=radio]").attr('disabled', false)
 $("#s2").click(function(event){
@@ -98,6 +102,7 @@ $("#s10").click(function(event){
 //var questionNumber = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"];
 //var correctAnswer = ["Chile", "Belgium", "Australia", "Italy", "Portugal", "South Korea", "Togo", "Latvia", "Nigeria", "Tanzania"];
 
+//OKAY, I SEE YOU HAD TRIED TO MAKE THAT FUNCTION TO CHECK FOR CORRECT
 
 //function checkAnswer(questionNumber, correctAnswer){
   //event.preventDefault();
